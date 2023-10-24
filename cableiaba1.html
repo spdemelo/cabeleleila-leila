@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cabeleleila Leila </title>
+        <link rel = "icon" type = "image/x-icon" href = "icone.ico">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <header>
+            <img src = "1 img.png" alt = "logotipo do site" width = "50">
+            <h3> 🪒 Cabeleleila Leila ✂️ </h3>
+            <p id = "slogan">  Cabeleireira Leila: venha fazer suas tinturas, seus cabelos, e até mesmo hidratar suas madeixas de cabelo <em> conosco! </em></p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href = "cableiaba1.html">📌 Faça seu agendamento </a></li>
+                <li><a href = "cableiaba2.html">🏢 Nosso espaço </a></li>
+                <li><a href = "cableiaba3.html">📊 Desempenho semanal </a></li>
+                <li><a href = "cableiaba4.html">📋 Listagem dos agendamentos </a></li>
+            </ul>
+        </nav>
+        <form action = "/agendamentos" method = "post">
+            <fieldset>
+            <legend> 📝 Faça seu agendamento com a Cabeleila Leila:</legend>
+            <div>
+                <label for = "nome" required> Nome: </label>
+                <input type = "text" name = "usuario_nome"  id = "nome" required size = "46" maxlength = "50">
+            </div>
+            <div>
+                <label for = "cpf" required> CPF: </label>
+                <input type = "text" name = "usuario_cpf" id = "cpf" required pattern = "\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                placeholder = "Exemplo do formato: 123.456.789-01" required size = "46" maxlength = "50">
+            </div>
+            <div>
+                <label for = "data" required> Data do agendamento: </label> 
+                <input type = "date" name = "usuario_data" id = "data" required size = "46" maxlength = "50">
+            </div>
+            <div>
+                <label for = "horario" required> Horário do agendamento: </label>
+                <input type = "time" name = "usuario_horario" id = "horario" required size = "46" maxlength = "50">
+            </div>
+            <div>
+                <p> Escolha seu procedimento (1 ou +): </p>
+                <input type = "radio" id = "procedimento" required size = "46" maxlength = "50" value="Escova">
+                <label for = "procedimento"> Escova </label><br>
+                <input type = "radio" id = "procedimento" required size = "46" maxlength = "50" value="Corte simples">
+                <label for = "procedimento"> Corte simples </label><br>
+                <input type = "radio" id = "procedimento" required size = "46" maxlength = "50" value="Corte premium">
+                <label for = "procedimento"> Corte premium </label><br>
+                <input type = "radio" id = "procedimento" required size = "46" maxlength = "50" value="Hidratação">
+                <label for = "procedimento"> Hidratação intensa </label><br>
+                <input type = "radio" id = "procedimento" required size = "46" maxlength = "50" value="Progressiva natural">
+                <label for = "procedimento"> Progressiva natural </label><br>
+                <input type = "radio" id = "procedimento" required size = "46" maxlength = "50" value="Tintura total">
+                <label for = "procedimento"> Tintura total </label><br>
+                <input type = "radio" id = "procedimento" required size = "46" maxlength = "50" value="Retoque de raiz">
+                <label for = "procedimento"> Retoque de raiz </label><br>
+            </div>
+            <div class="button">
+                <button type = "submit"> CONFIRMAR </button>
+              </div>
+        </fieldset>
+        </form>
+        <footer>
+            <div id = "redes">
+                <ul>
+                    <li><a href = "https://pt-br.facebook.com/"> Facebook </a></li>
+                    <li><a href = "https://www.instagram.com/"> Instagram</a></li>
+                    <li><a href = "https://www.tiktok.com/explore"> Tiktok </a></li>
+                </ul>
+            </div>
+            <address>
+                Cabeleleila Leila - Rua da Hidratação, 99 - São Paulo | São Paulo
+            </address>
+        </footer>
+    </body>
+</html>
